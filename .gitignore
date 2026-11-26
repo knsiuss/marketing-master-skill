@@ -1,0 +1,7 @@
+node_modules/
+.claude/
+docs/marketing/
+*.tgz
+npm-debug.log*
+.DS_Store
+__pycache__/
