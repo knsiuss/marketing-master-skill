@@ -1,12 +1,18 @@
 # marketing-master-skill
 
+[![npm version](https://img.shields.io/npm/v/marketing-master-skill.svg)](https://www.npmjs.com/package/marketing-master-skill)
+[![npm downloads](https://img.shields.io/npm/dm/marketing-master-skill.svg)](https://www.npmjs.com/package/marketing-master-skill)
+[![license](https://img.shields.io/npm/l/marketing-master-skill.svg)](./LICENSE)
+
 Token-optimized AI marketing orchestrator for **Claude Code** and `SKILL.md`-compatible agents.
 
 Built on 5 distinct marketing layers—**Kotler, Seth Godin, David Ogilvy, GaryVee, and Neil Patel**—with a mandatory **Phase 0 Research Gate** (hard-capped at 600 words) and a **deterministic Python anti-slop linter**.
 
 ![Marketing Master Demo](./assets/demo.gif)
 
-## Install via NPM
+## Install via npm
+
+Published on npm as [`marketing-master-skill`](https://www.npmjs.com/package/marketing-master-skill). No global install needed, `npx` pulls the latest version.
 
 Install into your current project (`.claude/skills/marketing-master`):
 ```bash
@@ -17,6 +23,20 @@ Or install globally (`~/.claude/skills/marketing-master`):
 ```bash
 npx marketing-master-skill init --global
 ```
+
+## Requirements
+
+- Node.js 18 or newer (`npx` ships with npm 7+).
+- Python 3, only for the linter gate. Install it as `python3` on PATH, or call `python` if that is your alias.
+
+## Verify the install
+
+```bash
+ls .claude/skills/marketing-master      # SKILL.md, personas/, references/, scripts/
+python3 .claude/skills/marketing-master/scripts/lint_copy.py examples/03-core-copy-example.md
+```
+
+The linter should print `LINT PASSED` and exit 0.
 
 ## How It Works
 
@@ -55,6 +75,10 @@ demo.tape                                    VHS recording of the demo gif
 ```bash
 python3 .claude/skills/marketing-master/scripts/lint_copy.py examples/03-core-copy-example.md
 ```
+
+## Related
+
+`natural-food-photographer-skill` ships the food photography director as a separate package, so this one stays focused on marketing.
 
 ## License
 
