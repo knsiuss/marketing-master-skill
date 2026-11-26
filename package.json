@@ -1,7 +1,7 @@
 {
   "name": "marketing-master-skill",
   "version": "1.0.0",
-  "description": "Token-optimized AI agent skills: a marketing orchestrator built on Kotler, Godin, Ogilvy, GaryVee, and Neil Patel with deterministic anti-slop linting, plus a natural food photography director for menu and promo images.",
+  "description": "Token-optimized AI marketing skill for Claude Code built on Kotler, Godin, Ogilvy, GaryVee, and Neil Patel with deterministic anti-slop linting.",
   "bin": {
     "marketing-master": "./bin/cli.js"
   },
@@ -20,9 +20,7 @@
     "skill",
     "marketing",
     "copywriting",
-    "anti-slop",
-    "food-photography",
-    "image-prompt"
+    "anti-slop"
   ],
   "homepage": "https://github.com/knsiuss/marketing-master-skill#readme",
   "repository": {
